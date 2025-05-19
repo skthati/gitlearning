@@ -50,6 +50,127 @@ https://github.com/firstcontributions/first-contributions
 <hr>
 
 
+# 🧾 Git Cheat Sheet (One-Page)
+
+## 🔧 Setup
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+
+---
+
+## 📁 Start a Repo
+```bash
+git init                          # Initialize new repo
+git clone <repo-url>             # Clone remote repo
+```
+
+---
+
+## 🌿 Branching
+```bash
+git branch                       # List branches
+git branch <name>                # Create new branch
+git checkout <name>              # Switch to branch
+git checkout -b <name>           # Create and switch to new branch
+git switch -c <name>             # Modern way to create & switch
+git branch -m <new-name>         # Rename current branch
+git branch -M <new-name>         # Force rename branch
+```
+
+---
+
+## ✍️ Making Changes
+```bash
+git status                       # See current changes
+git add .                        # Stage all changes
+git add <file>                   # Stage specific file
+git commit -m "Message"          # Commit staged changes
+git diff                         # Show unstaged changes
+git diff --staged                # Show staged changes
+```
+
+---
+
+## 🔄 Syncing with Remote
+```bash
+git remote -v                    # View remotes
+git push -u origin <branch>      # Push new branch and track it
+git push                         # Push to tracked branch
+git pull                         # Pull & merge latest changes
+git pull --rebase                # Pull with rebase (linear history)
+git fetch                        # Download remote changes (no merge)
+```
+
+---
+
+## 🗑️ Undoing Changes
+```bash
+git restore <file>               # Discard unstaged changes (Git 2.23+)
+git checkout -- <file>           # Discard unstaged changes (older)
+git reset HEAD <file>            # Unstage a staged file
+git reset --soft HEAD~1          # Undo last commit (keep changes)
+git reset --hard HEAD~1          # Undo last commit (discard changes)
+```
+
+---
+
+## 🧼 Clean Up
+```bash
+git stash                        # Save uncommitted changes
+git stash pop                    # Reapply last stashed changes
+git branch -d <name>             # Delete local branch (merged)
+git branch -D <name>             # Force delete local branch
+git push origin --delete <name>  # Delete remote branch
+```
+
+---
+
+## 🔍 Logs & History
+```bash
+git log                          # View commit history
+git log --oneline                # Condensed history
+git blame <file>                 # See who changed what
+```
+
+---
+
+## 💡 Tips
+- Use **descriptive branch names** like `feature/login-form` or `bugfix/payment-issue`
+- Always `git pull` before starting work
+- Commit often with clear messages
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>
+
+## Simple Git steps
+
+
+    ✅  Fork the repository
+        > git fork "url-to-repo"
+    ✅  Create a branch or modify branch name
+        > git switch -c "new-branch-name"
+    ✅  Make changes to your code.
+    ✅  stage your changes
+        > git add .
+        or
+        > git add path/to/file
+    ✅  Commit your changes
+        > git commit -m "Update readme.md" 
+    ✅  Push new branch to remote
+        > git push -u origin new-branch-name
+    ✅  Create a Pull Request (PR)
+        > Go to github repo, click 'compare & pull request', describe changes
+        and submit PR for review
+    ✅  PR merge
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>
+
 <!-- Dotted Line -->
 ## Git Terminology <a name="dotted-line"></a>
 
@@ -102,6 +223,11 @@ https://github.com/firstcontributions/first-contributions
    - Sub-commands --> push, pull
    - options --> - or --, --hard
    ```
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>
+
 
 - Git and Github
    ```
@@ -160,6 +286,21 @@ https://github.com/firstcontributions/first-contributions
         > git add path/to/file
     ✅  Commit your changes
         > git commit -m "Update readme.md" 
+    ✅  Push new branch to remote
+        > git push -u origin new-branch-name
+    ✅  Create a Pull Request (PR)
+        > Go to github repo, click 'compare & pull request', describe changes
+        and submit PR for review
+    ✅  PR merge
+    
+    ```
+
+- Git fetch and git merge
+    ```
+    ✅  > git fetch
+        > git merge
+    ✅  above two commands are equal to 
+        > git push 
     ```
 
 - git status
@@ -187,42 +328,18 @@ https://github.com/firstcontributions/first-contributions
    - Your work, track changes, revision history
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<hr>
-
-<!-- Draw a square -->
-## Problem Solving <a name="draw-a-square"></a>
 
 
-
-```Python
-# Code here
-
-
-   ```
-Output.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>
 
 
-# Top Projects
-- 🚀 [Python Algorithms](https://github.com/skthati/Python-Algorithms)
-- 🏁 [Turtle-crossing](https://github.com/skthati/turtle-crossing)
-- 🚧 [Pong Arcade Game](https://github.com/skthati/Pong_Arcade_Game)
-- 🔰 [Snake Game](https://github.com/skthati/Snake_game_python_turtle)
-- ⛰️ [Guess the state](https://github.com/skthati/Guess-the-state/)
-- 📍 [Django Project from Harvard CS50 Course](https://github.com/skthati/Harvard_CS50_Django)
 
 
 
 
-<br/>
-- 💼 I'm based in Auckland, NZ.
-
-- 🌱 I’m currently learning **Python, Git, Mysql**
 
 - 👨‍💻 All of my projects are available at [https://github.com/skthati](https://github.com/skthati)
 
@@ -230,90 +347,3 @@ Output.
 
 - 📄 Know about my experiences [https://thati.org/](https://thati.org/)
 
-
-<!-- Draw a square -->
-## Problem Solving <a name="draw-a-square"></a>
-
-
-
-```Python
-# Code here
-
-
-   ```
-Output.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
-
-
-
-<!-- Draw a square -->
-## Problem Solving <a name="draw-a-square"></a>
-
-
-
-```Python
-# Code here
-
-
-   ```
-Output.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
-
-
-
-<!-- Draw a square -->
-## Problem Solving <a name="draw-a-square"></a>
-
-
-
-```Python
-# Code here
-
-
-   ```
-Output.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
-
-
-
-<!-- Draw a square -->
-## Problem Solving <a name="draw-a-square"></a>
-
-
-
-```Python
-# Code here
-
-
-   ```
-Output.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
-
-
-<!-- Draw a square -->
-## Problem Solving <a name="draw-a-square"></a>
-
-
-
-```Python
-# Code here
-
-
-   ```
-Output.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
