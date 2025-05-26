@@ -37,6 +37,15 @@ https://www.conventionalcommits.org/en/v1.0.0/
 First Contributions
 https://github.com/firstcontributions/first-contributions
 
+Markdown language
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+https://github.com/skills/communicate-using-markdown
+
+https://github.com/actions/starter-workflows
+
+
+
    ```
    - ls --> is to show all folders
    - VCS --> Tracks changes to your code or collection of lines
@@ -168,20 +177,19 @@ git blame <file>                 # See who changed what
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
 
 <!-- Dotted Line -->
 ## Git Terminology <a name="dotted-line"></a>
 
 
-- Working Tree
+
+- ### Working Tree
 
    ```
    Directory and files where you are currently working on.
    ```
 
-- Repository (repo)
+- ### Repository (repo)
    ```
    Directory located on top level of working tree where Git keeps all the history.
 
@@ -190,7 +198,7 @@ git blame <file>                 # See who changed what
    ```
 
 
-- Object
+- ### Object
    ```
    - blob --> ordinary file
    - tree --> represents directory
@@ -198,18 +206,68 @@ git blame <file>                 # See who changed what
    - tag --> name of that commit
    ```
 
-- Commit
+- ### Commit
    ```
    - Once commit is made, Changes are visible to others to see
    
+   - A file as several states in git.
+        - Untracked --> git doesn't know about this file. (first time file created)
+        - Tracked --> Actively monitored
+            - Unmodified
+            - Modified
+            - Staged
+            - Commited
    ```
 
-- Branch
+- ### Branch
    ```
+   - Branches are best way to experiment with your code before merging to main branch
    - Collection of linked commits. 
    - Main --> Main is when a repository is initialized.
    - HEAD --> Current branch is called as head.
+   
+   - git checkout -b "new-branch-name"
    ```
+
+- ### Pull requests
+
+    Signalling your code is ready to be merged with main branch.
+
+
+- ### Github Flow
+
+    Github flow cycle.
+
+      ✅  Create feature branch from main branch
+      ✅  Write your code in child branch
+      ✅  Commit your code.
+      ✅  Create a pull request (PR)
+      ✅  Let PR be reviewed and approved.
+      ✅  Merge into main branch.
+      ✅  You can delete the child branch (So that no one will use that branch)
+    
+
+    ![alt text](2-branching.png)
+
+- ### Github Issues
+    GitHub Issues are used to track ideas, feedback, tasks, or bugs for work on GitHub
+
+- ### Discussions
+    Not related to code and meant to have open conversations in public
+
+- ### Github Code Scanning
+      GitHub code scanning to identify, resolve, and prevent insecure coding patterns.
+
+- ### CodeQL
+      CodeQL is a static analysis testing tool that helps you identify security weaknesses such as SQL injection, cross-site scripting, and code injection issues
+
+- ### Github Actions
+      Github Actions is the automation and CI/CD platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production.
+
+    https://docs.github.com/en/actions/about-github-actions/understanding-github-actions
+
+- ### Github Copilot
+      Github Copilot helps you write code faster with less work.
 
 - Remote
    ```
@@ -328,6 +386,97 @@ git blame <file>                 # See who changed what
    - Your work, track changes, revision history
    ```
 
+# Git Terminology
+
+### Working Tree
+- Directory structure that contains all of the project files.
+
+### Repository
+- Top level of working tree
+
+### Clone
+- Creating a copy of remote repository
+
+### Fork
+- Remote repo which we do not have access.
+- Contributing to someone else project. by creating own copy of remote repo
+
+### Commit
+- Snapshot of the changes made to files in a repo. Record and save changes
+
+### Staging area
+- Immediate area where changes to files are prepared before they are committed. Developers can choose what to commit.
+
+### Branch
+- Distinct version of project
+
+#### Head
+- working branch is head.
+
+### Merge
+- Combining changes of one branch to main branch.
+
+### Blobs
+- Individual files
+
+### Tree
+- Working tree
+
+### Commit
+- Specific version of working tree
+
+### Tag
+- Label assigned to individual commit
+
+### Remote
+- Reference to Default repo
+
+### Pull
+- Action of fetching changes from remote repository to current branch
+
+### Push
+- Local commits to remote repository
+
+### Fetch
+- Retrieve changes from remote repository. This allows to review before applying the merge
+
+### Pull request
+- Request for the changes to be merged to the target branch.
+
+### Remote Repositories
+- facilitates interaction among distributed teams
+
+### Collaboration tools
+- features like issues, discussions, pull requests, notifications, labels, actions, forks, wikis and projects.
+
+### Branch protection
+- enforcing conditions before merging.
+
+# GitHub Flow
+- Creating a repository
+- Creating a branch
+- Making changes to a branch
+- Creating a pull request
+- Reviewing a pull request
+- Addressing review comments
+- Merging pull request
+- Deleting the branch
+
+
+
+
+
+
+- 
+
+# Courses to be Completed
+
+https://learn.microsoft.com/en-us/training/paths/github-actions/
+
+
+### Devops foundations
+
+https://learn.microsoft.com/en-in/training/paths/devops-foundations-core-principles-practices/
 
 
 
